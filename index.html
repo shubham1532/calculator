@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Calculator</title>
+  <style media="screen">
+    .cl1 {
+      background-color: #d0edef;
+      width: 500px;
+      height: 650px;
+      position: absolute;
+      margin: 100px 200px auto 200px;
+    }
+
+    .cl2 {
+      text-align: center;
+    }
+
+    .text {
+      font-size: 20px;
+    }
+
+    .pos {
+      text-align: center;
+    }
+
+    .box {
+      height: calc(1.5em + 1rem + 2px);
+      padding: .5rem 1rem;
+      font-size: 1.25rem;
+      line-height: 1.5;
+    }
+
+    .body {
+      background-color: #e6d0ef;
+    }
+
+    .myButton {
+      box-shadow: inset 0px 0px 14px -3px #f2fadc;
+      background: linear-gradient(to bottom, #dbe6c4 5%, #9ba892 100%);
+      background-color: #dbe6c4;
+      border-radius: 6px;
+      border: 1px solid #b2b8ad;
+      display: inline-block;
+      cursor: pointer;
+      color: #757d6f;
+      font-family: Arial;
+      font-size: 15px;
+      font-weight: bold;
+      padding: 6px 24px;
+      text-decoration: none;
+      text-shadow: 0px 1px 0px #ced9bf;
+    }
+
+    .myButton:hover {
+      background: linear-gradient(to bottom, #9ba892 5%, #dbe6c4 100%);
+      background-color: #9ba892;
+    }
+
+    .myButton:active {
+      position: relative;
+      top: 1px;
+    }
+  </style>
+</head>
+
+<body class="body">
+  <div class="cl1">
+    <h2 class="pos">Decimal to binary,octal,hexal</h2>
+    <form class="" action="index.html" method="post">
+      <div class="cl2">
+        <label class="text">Enter decimal number:</label><br>
+        <input class="box" id="answerD" type="text" name="" value=""><br><br>
+
+        <button class="btn myButton " id="calculateD" type="button" name="button">CHECK</button> <br>
+
+        <br> <label class="text">Binary Number:</label><br>
+        <input class="box" id="answerB" type="text" name="" value=""><br>
+
+        <button class="btn myButton " id="calculateB" type="button" name="button">CHECK</button> <br>
+
+
+        <label class="text">Octal Number:</label><br>
+        <input class="box" id="answerO" type="text" name="" value=""><br>
+
+        <button class="btn myButton " id="calculateO" type="button" name="button">CHECK</button> <br>
+
+
+        <label class="text">HexaDecimal Number:</label><br>
+        <input class="box" id="answerH" type="text" name="" value=""><br>
+
+        <button class="btn myButton " id="calculateH" type="button" name="button">CHECK</button> <br>
+
+      </div>
+
+    </form>
+  </div>
+  <script src="calculator.js" charset="utf-8">
+
+  </script>
+</body>
+
+</html>
